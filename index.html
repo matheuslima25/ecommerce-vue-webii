@@ -5,17 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Random User - WEB II</title>
+  <title>Product - WEB II</title>
 </head>
 <body>
   <div id ="app">
-    <img v-bind:src="picture" :alt="`${firstName} ${lastName}`" :class="gender" />
-    <h1>{{firstName}} {{lastName}}</h1>
-    <h3>Email: {{email}}</h3>
-    <button :class="gender" @click="getUser()">Get Random
+    <img v-bind:src="image" :alt="`${name}`" :class="gender" />
+    <h5>ID: {{id}}</h5>
+    <h1>Product: {{name}}</h1>
+    <h3>Description: {{description}}</h3>
+    <h3>Price: {{price}}</h3>
+    <h3>Category: {{category}}</h3>
+    <button :class="gender" @click="getProduct()">Get Next</button>
   </div>
   
-  <script src="https://unpkg.com/vue@3.0.5"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
